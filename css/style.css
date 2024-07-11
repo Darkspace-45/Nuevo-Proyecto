@@ -261,7 +261,9 @@ h3{
 
 .products{
     padding: 0 0 100px 0;
+    padding-bottom: 400px;
     text-align: center;
+
 }
 
 .products h2{
@@ -345,6 +347,12 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.titulo-contact{
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 50px;
 }
 
 .contact{
