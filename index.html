@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+<body>
+    
+    <div id="loading">
+        <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">Mercadona</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home" class="active">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="icono">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+
+            <div class="header-txt">
+                <span>Ofertas</span>
+                <h1>Frutas y Verduras</h1>
+                <p>
+                    La mejor selección de Frutas y Verduras. <br> Aprovecha nuestras increibles ofertas y obten todo lo que necesitas para tus comidas.
+                </p>
+                <a href="#informacion" class="btn-1">Información</a>
+            </div>
+            <div class="header-img">
+                <img src="images/rigth.png" alt="">
+            </div>
+        </div>
+    </header>
+
+
+    <section class="informacion container">
+
+        <div class="informacion-content">
+
+            <div class="information-1">
+                <img src="images/i1.svg" alt="">
+                <h3>Atención 24 horas</h3>
+                <p>
+                    Estamos siempre listos <br> para ayudarte.
+                </p>
+            </div>
+
+            <div class="information-1">
+                <img src="images/i2.svg" alt="">
+                <h3>Pagos en linea</h3>
+                <p>
+                    Aceptamos todas las tarjetas <br> además de pago en linea.
+                </p>
+            </div>
+
+            <div class="information-1">
+                <img src="images/i3.svg" alt="">
+                <h3>Envio Localizado</h3>
+                <p>
+                    Nos encargamos de que tus productos <br> siempre lleguen a la puerta <br> de tu casa.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="oferts container">
+
+        <div class="ofert-1">
+            <img src="images/f1.png" alt="">
+            <h3>Oferta</h3>
+            <p>Premium</p>
+        </div>
+
+        <div class="ofert-1">
+            <img src="images/f2.png" alt="">
+            <h3>Oferta</h3>
+            <p>Premium</p>
+        </div>
+
+        <div class="ofert-1">
+            <img src="images/f3.png" alt="">
+            <h3>Oferta</h3>
+            <p>Premium</p>
+        </div>
+
+        <div class="ofert-1">
+            <img src="images/f4.png" alt="">
+            <h3>Oferta</h3>
+            <p>Premium</p>
+        </div>
+    </section>
+
+
+    <main class="products container" id="lista-1">
+    <h1>Productos Destacados</h1>
+
+    <div class="product-content">
+
+        <div class="product">
+            <img src="images/pr1.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+                <p class="precio">$2.50</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="images/pr2.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+                <p class="precio">$2.50</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="images/pr3.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+                <p class="precio">$2.50</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="images/pr4.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+                <p class="precio">$2.50</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="images/pr5.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+                <p class="precio">$2.50</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="images/pr6.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+                <p class="precio">$2.50</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="images/pr7.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+                <p class="precio">$2.50</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="images/pr8.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+                <p class="precio">$2.50</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    </main>
+
+    <section class="service">
+
+        <div class="service-1">
+            <img src="images/1.png" alt="">
+        </div>
+        <div class="service-2">
+            <img src="images/2.png" alt="">
+        </div>
+        <div class="service-3">
+            <img src="images/3.png" alt="">
+        </div>
+
+    </section>
+
+
+    <section class="contact container" id="contacto">
+        <h3>Contáctate con Nosotros</h3>
+        <form>
+            <input type="email" placeholder="Ingrese su correo">
+            <input type="submit" class="btn-3">
+        </form>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            
+
+            <div class="link">
+                <h3>Nosotros</h3>
+                <p>
+                    Nosotros somos una plataforma la cual provee a <br>las personas o familias de alimentos que <br>los mantengan con buena salud y un excelente estilo de alimentación.
+                </p>
+                <img src="images/megan-thomas-xMh_ww8HN_Q-unsplash.jpg" alt="">
+            </div>
+
+            <div class="link">
+                <h3>Ubicación</h3>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.9050132911202!2d-78.48624789259489!3d-0.1168252989659779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5857a7e4df9d3%3A0x2d57cf82370f2842!2sN65-33%2C%20Las%20Lagunas%2C%20Quito%20170303!5e0!3m2!1ses!2sec!4v1720654705295!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            
+            
+        </div>
+
+        <div class="go-top-container">
+            <div class="go-top-button">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </div>
+
+
+
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gotop.js"></script>
+</body>
+</html>
