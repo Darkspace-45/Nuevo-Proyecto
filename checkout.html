@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario de Pago</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Mercadona</a>
+        </div>
+    </header>
+
+    <main class="checkout container">
+        <div class="order-summary">
+            <h2>Resumen del Pedido</h2>
+            <div id="order-items">
+                <!-- Los productos seleccionados se mostrarán aquí -->
+            </div>
+            <div class="total">
+                <span>Total:</span>
+                <span id="order-total">$0.00</span>
+            </div>
+        </div>
+        <div class="payment-form">
+            <h2>Información de Pago</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="card-name">Nombre en la tarjeta</label>
+                    <input type="text" id="card-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Número de tarjeta</label>
+                    <input type="text" id="card-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Fecha de Expiración</label>
+                    <input type="text" id="expiry-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" required>
+                </div>
+                <button type="submit" class="btn-2">Pagar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>

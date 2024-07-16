@@ -54,7 +54,11 @@
                                 </thead>
                                 <tbody></tbody>
                             </table>
+                            <div id="total-container">
+                                <span>Total: $</span><span id="total">0.00</span>
+                            </div>
                             <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                            <a href="#" id="finalizar-compra" class="btn-2">Finalizar Compra</a>
                         </div>
                     </li>
                 </ul>
@@ -76,7 +80,6 @@
             </div>
         </div>
     </header>
-
 
     <section class="informacion container" id="informacion">
 
@@ -109,7 +112,6 @@
 
     </section>
 
-
     <section class="oferts container" id="Ofertas">
 
         <div class="ofert-1">
@@ -137,92 +139,79 @@
         </div>
     </section>
 
-
     <main class="products container" id="lista-1">
-    <h1>Productos Destacados</h1>
+        <h1>Productos Destacados</h1>
 
-    <div class="product-content">
-
-        <div class="product">
-            <img src="images/pr1.png" alt="">
-            <div class="product-txt">
-                <h3>Manzana</h3>
-                <p class="precio">$1.30</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+        <div class="product-content">
+            <div class="product">
+                <img src="images/pr1.png" alt="">
+                <div class="product-txt">
+                    <h3>Manzana</h3>
+                    <p class="precio">$1.30</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr2.png" alt="">
+                <div class="product-txt">
+                    <h3>Naranja</h3>
+                    <p class="precio">$1.75</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr3.png" alt="">
+                <div class="product-txt">
+                    <h3>Arandanos</h3>
+                    <p class="precio">$1.10</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr4.png" alt="">
+                <div class="product-txt">
+                    <h3>Mora</h3>
+                    <p class="precio">$0.75</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr5.png" alt="">
+                <div class="product-txt">
+                    <h3>Fresa</h3>
+                    <p class="precio">$0.80</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr6.png" alt="">
+                <div class="product-txt">
+                    <h3>Plátano</h3>
+                    <p class="precio">$1.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr7.png" alt="">
+                <div class="product-txt">
+                    <h3>Hamburguesa</h3>
+                    <p class="precio">$2.25</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/pr8.png" alt="">
+                <div class="product-txt">
+                    <h3>Espinaca</h3>
+                    <p class="precio">$0.90</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
+                </div>
             </div>
         </div>
-        
-        <div class="product">
-            <img src="images/pr2.png" alt="">
-            <div class="product-txt">
-                <h3>Naranja</h3>
-                <p class="precio">$1.75</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="images/pr3.png" alt="">
-            <div class="product-txt">
-                <h3>Arandanos</h3>
-                <p class="precio">$1.10</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="images/pr4.png" alt="">
-            <div class="product-txt">
-                <h3>Mora</h3>
-                <p class="precio">$0.75</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
-            </div>
-        </div>
-        
-        <div class="product">
-            <img src="images/pr5.png" alt="">
-            <div class="product-txt">
-                <h3>Fresa</h3>
-                <p class="precio">$0.80</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="images/pr6.png" alt="">
-            <div class="product-txt">
-                <h3>Plátano</h3>
-                <p class="precio">$1.00</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="images/pr7.png" alt="">
-            <div class="product-txt">
-                <h3>Hamburguesa</h3>
-                <p class="precio">$2.25</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="images/pr8.png" alt="">
-            <div class="product-txt">
-                <h3>Espinaca</h3>
-                <p class="precio">$0.90</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
-            </div>
-        </div>
-
-    </div>
-
-
     </main>
 
     <h1 style="color: #181713; text-align: center;padding-bottom: 50px;" id="servicios">Qué Servicios Ofrecemos</h1>
     <section class="service">
-
         <div class="service-1">
             <img src="images/1.png" alt="">
         </div>
@@ -232,7 +221,6 @@
         <div class="service-3">
             <img src="images/3.png" alt="">
         </div>
-
     </section>
 
     <h3 class="titulo-contact" id="contacto">Contáctate con Nosotros</h3>
@@ -245,11 +233,7 @@
     </section>
 
     <footer class="footer">
-
         <div class="footer-content container">
-
-            
-
             <div class="link">
                 <h3>Nosotros</h3>
                 <p>
@@ -257,25 +241,18 @@
                 </p>
                 <img src="images/megan-thomas-xMh_ww8HN_Q-unsplash.jpg" alt="">
             </div>
-
             <div class="link">
                 <h3>Ubicación</h3>
                 <br>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.9050132911202!2d-78.48624789259489!3d-0.1168252989659779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5857a7e4df9d3%3A0x2d57cf82370f2842!2sN65-33%2C%20Las%20Lagunas%2C%20Quito%20170303!5e0!3m2!1ses!2sec!4v1720654705295!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
-            
-            
         </div>
 
         <div class="go-top-container">
             <div class="go-top-button">
-              <i class="fas fa-chevron-up"></i>
+                <i class="fas fa-chevron-up"></i>
             </div>
-          </div>
-
-
-
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
