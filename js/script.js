@@ -87,22 +87,20 @@ document.addEventListener("DOMContentLoaded", function() {
         if (!productoExistente) {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>
-                    <img src="${elemento.imagen}" width=50>
-                </td>
-                <td>
-                    ${elemento.titulo}
-                </td>
-                <td>
-                    <span class="cantidad">1</span>
-                </td>
-                <td>
-                    ${elemento.precio}
-                </td>
-                <td>
-                    <a href="#" class="borrar" data-id="${elemento.id}" style="color: red;"> X </a>
-                </td>
-            `;
+    <td class="producto-info">
+        <img src="${elemento.imagen}" width=50>
+        <span class="producto-titulo">${elemento.titulo}</span>
+    </td>
+    <td class="producto-cantidad">
+        <span class="cantidad">1</span>
+    </td>
+    <td class="producto-precio">
+        ${elemento.precio}
+    </td>
+    <td class="producto-eliminar">
+        <a href="#" class="borrar" data-id="${elemento.id}" style="color: red;"> X </a>
+    </td>
+`;
             lista.appendChild(row);
         }
 

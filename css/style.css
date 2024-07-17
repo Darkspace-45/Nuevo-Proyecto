@@ -783,8 +783,3 @@ padding-bottom: 50px;
         display: inline-block;
     }
 }
-
-#carrito {
-    max-width: 100%;
-    overflow-x: hidden;
-}
