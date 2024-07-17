@@ -10,11 +10,34 @@
     <title>Formulario de Pago</title>
 </head>
 <body>
-    <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo">Mercadona</a>
+
+    <div id="loading">
+        <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </div>
+    </div>
+
+    <header class="header-2">
+        <div class="menu container">
+            <a href="index.html" class="logo">Mercadona</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar" style="justify-content: center;">
+                <ul>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#lista-1">Productos</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Información de Pago</h1>
     </header>
+
 
     <main class="checkout container">
         <div class="order-summary">
@@ -22,6 +45,7 @@
             <div id="order-items">
                 <!-- Los productos seleccionados se mostrarán aquí -->
             </div>
+            <br>
             <div class="total">
                 <span>Total:</span>
                 <span id="order-total">$0.00</span>
@@ -51,6 +75,37 @@
         </div>
     </main>
 
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Nosotros:</h3>
+                <p>
+                    Nosotros somos una plataforma la cual provee a <br>las personas o familias de alimentos que <br>los mantengan con buena salud y un excelente estilo de alimentación.
+                </p>
+                <img src="images/megan-thomas-xMh_ww8HN_Q-unsplash.jpg" alt="">
+            </div>
+        </div>
+        <h3 style="color: #ffff;">Ubicación:</h3>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8102010891294!2d-78.4904057532549!3d-0.11558971908857363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5857a6d7a9d41%3A0x20132dc286fb8c1a!2sJuank!5e0!3m2!1ses!2sec!4v1721174750726!5m2!1ses!2sec" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="go-top-container">
+            <div class="go-top-button">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <p style="text-align: center; color: #181818; background-color: #8dc84b;"><em>Derechos Reservados Brian Rodriguez© 2024</em></p>
+    </footer>
+
     <script src="js/checkout.js"></script>
+    <script src="js/gotop.js"></script>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.getElementById('loading').style.display = 'none';
+        });
+    </script>
 </body>
 </html>

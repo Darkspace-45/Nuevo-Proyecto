@@ -31,7 +31,6 @@
 
             <nav class="navbar">
                 <ul>
-                    <li><a href="#home" class="active">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#lista-1">Productos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
@@ -41,13 +40,17 @@
             <div>
                 <ul>
                     <li class="submenu">
-                        <img src="images/car.svg" id="img-carrito" alt="icono">
-                        <div id="carrito">
+                        <div id="toggle-carrito" class="carrito-btn">
+                            <img src="images/car.svg" alt="icono">
+                        </div>
+                        
+                        <div id="carrito" class="carrito hidden">
                             <table id="lista-carrito">
                                 <thead>
                                     <tr>
                                         <th>Imagen</th>
                                         <th>Nombre</th>
+                                        <th>Cantidad</th>
                                         <th>Precio</th>
                                         <th></th>
                                     </tr>
@@ -59,7 +62,7 @@
                             </div>
                             <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
                             <a href="#" id="finalizar-compra" class="btn-2">Finalizar Compra</a>
-                        </div>
+                        </div>                                                          
                     </li>
                 </ul>
             </div>
@@ -235,24 +238,25 @@
     <footer class="footer">
         <div class="footer-content container">
             <div class="link">
-                <h3>Nosotros</h3>
+                <h3>Nosotros:</h3>
                 <p>
                     Nosotros somos una plataforma la cual provee a <br>las personas o familias de alimentos que <br>los mantengan con buena salud y un excelente estilo de alimentación.
                 </p>
                 <img src="images/megan-thomas-xMh_ww8HN_Q-unsplash.jpg" alt="">
             </div>
-            <div class="link">
-                <h3>Ubicación</h3>
-                <br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.9050132911202!2d-78.48624789259489!3d-0.1168252989659779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5857a7e4df9d3%3A0x2d57cf82370f2842!2sN65-33%2C%20Las%20Lagunas%2C%20Quito%20170303!5e0!3m2!1ses!2sec!4v1720654705295!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
         </div>
+        <h3 style="color: #ffff;">Ubicación:</h3>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8102010891294!2d-78.4904057532549!3d-0.11558971908857363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5857a6d7a9d41%3A0x20132dc286fb8c1a!2sJuank!5e0!3m2!1ses!2sec!4v1721174750726!5m2!1ses!2sec" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <div class="go-top-container">
             <div class="go-top-button">
                 <i class="fas fa-chevron-up"></i>
             </div>
         </div>
+        <hr>
+        <br>
+        <p style="text-align: center; color: #181818; background-color: #8dc84b;"><em>Derechos Reservados Brian Rodriguez© 2024</em></p>
     </footer>
 
     <script src="js/script.js"></script>
