@@ -515,7 +515,7 @@ input{
 .go-top-container {
     position: fixed;
     bottom: 4rem;
-    right: 4rem;
+    right: 1rem;
     width: 6.6rem;
     height: 6.6rem;
     z-index: -1;
