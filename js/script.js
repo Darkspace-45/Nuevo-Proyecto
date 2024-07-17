@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
         loader.style.display = 'none';
     });
 
-    // Selección de elementos del DOM
     const toggleCarritoBtn = document.getElementById('toggle-carrito');
     const carrito = document.getElementById('carrito');
     const lista = document.querySelector("#lista-carrito tbody");
@@ -13,10 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const navbarLinks = document.querySelectorAll('.navbar ul li a');
     const totalElement = document.getElementById('total');
 
-    // Variable para controlar el estado del carrito
     let carritoAbierto = false;
 
-    // Cargar event listeners
     cargarEventListeners();
 
     function cargarEventListeners() {
@@ -27,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
             link.addEventListener('click', setActiveClass);
         });
 
-        // Mantener abierto el carrito al hacer clic fuera de él
         document.addEventListener('click', function(e) {
             const clicEnCarrito = e.target.closest('#toggle-carrito');
             if (!clicEnCarrito && carritoAbierto) {
@@ -35,27 +31,22 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // Mostrar carrito al pasar el cursor sobre la pantalla
         document.addEventListener('mousemove', function(e) {
             if (carritoAbierto) {
                 mostrarCarrito();
             }
         });
 
-        // Agregar evento para comprar un elemento
         const agregarCarritoBtns = document.querySelectorAll('.agregar-carrito');
         agregarCarritoBtns.forEach(btn => {
             btn.addEventListener('click', comprarElemento);
         });
 
-        // Agregar evento para aumentar la cantidad de productos
         lista.addEventListener('click', aumentarCantidad);
 
-        // Agregar evento para eliminar producto del carrito
         lista.addEventListener('click', eliminarElemento);
     }
 
-    // Función para alternar la visibilidad del carrito
     function toggleCarrito() {
         carritoAbierto = !carritoAbierto;
         if (carritoAbierto) {
@@ -65,14 +56,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Función para comprar un elemento
     function comprarElemento(e) {
         e.preventDefault();
         const elemento = e.target.parentElement.parentElement;
         leerDatosElemento(elemento);
     }
 
-    // Función para leer los datos del elemento
     function leerDatosElemento(elemento) {
         const infoElemento = {
             imagen: elemento.querySelector('img').src,
@@ -83,9 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
         insertarCarrito(infoElemento);
     }
 
-    // Función para insertar el elemento en el carrito
     function insertarCarrito(elemento) {
-        // Verificar si el producto ya está en el carrito
         const productosEnCarrito = lista.querySelectorAll('tr');
         let productoExistente = false;
 
@@ -123,7 +110,6 @@ document.addEventListener("DOMContentLoaded", function() {
         mostrarCarrito();
     }
 
-    // Función para aumentar la cantidad de un producto en el carrito
     function aumentarCantidad(e) {
         e.preventDefault();
         if (e.target.classList.contains('agregar-carrito')) {
@@ -132,7 +118,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Función para aumentar la cantidad de un producto existente en el carrito
     function aumentarCantidadProducto(producto) {
         const cantidadElemento = producto.querySelector('.cantidad');
         let cantidad = parseInt(cantidadElemento.textContent);
@@ -140,7 +125,6 @@ document.addEventListener("DOMContentLoaded", function() {
         cantidadElemento.textContent = cantidad;
     }
 
-    // Función para eliminar un elemento del carrito
     function eliminarElemento(e) {
         e.preventDefault();
         if (e.target.classList.contains('borrar')) {
@@ -150,7 +134,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Función para vaciar el carrito
     function vaciarCarrito() {
         while (lista.firstChild) {
             lista.removeChild(lista.firstChild);
@@ -160,7 +143,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return false;
     }
 
-    // Función para finalizar la compra
     function finalizarCompra(e) {
         e.preventDefault();
         const carrito = [];
@@ -176,7 +158,6 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = 'checkout.html';
     }
 
-    // Función para cambiar la clase activa en el navbar
     function setActiveClass(e) {
         navbarLinks.forEach(link => {
             link.classList.remove('active');
@@ -184,7 +165,6 @@ document.addEventListener("DOMContentLoaded", function() {
         e.target.classList.add('active');
     }
 
-    // Función para actualizar el total
     function actualizarTotal() {
         let total = 0;
         const productos = lista.querySelectorAll('tr');
@@ -196,18 +176,15 @@ document.addEventListener("DOMContentLoaded", function() {
         totalElement.textContent = total.toFixed(2);
     }
 
-    // Función para mostrar el carrito
     function mostrarCarrito() {
         carrito.classList.add('visible');
     }
 
-    // Función para ocultar el carrito
     function ocultarCarrito() {
         carrito.classList.remove('visible');
     }
 });
 
-// Añade este script al final de tu archivo HTML o en un archivo JS separado
 document.querySelectorAll('.navbar a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
