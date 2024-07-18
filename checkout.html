@@ -29,6 +29,7 @@
             </label>
             <nav class="navbar" style="justify-content: center;">
                 <ul>
+                    <li><a href="index.html#">Inicio</a></li>
                     <li><a href="index.html#servicios">Servicios</a></li>
                     <li><a href="index.html#lista-1">Productos</a></li>
                     <li><a href="index.html#contacto">Contacto</a></li>
@@ -38,12 +39,24 @@
         <h1>Información de Pago</h1>
     </header>
 
-
     <main class="checkout container">
         <div class="order-summary">
             <h2>Resumen del Pedido</h2>
             <div id="order-items">
                 <!-- Los productos seleccionados se mostrarán aquí -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Total</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
             </div>
             <br>
             <div class="total">
@@ -63,7 +76,7 @@
                     <input type="text" id="card-number" required>
                 </div>
                 <div class="form-group">
-                    <label for="expiry-date">Fecha de Expiración</label>
+                    <label for="expiry-date">Fecha de Expiración (MM/YY)</label>
                     <input type="text" id="expiry-date" required>
                 </div>
                 <div class="form-group">
@@ -80,7 +93,7 @@
             <div class="link">
                 <h3>Nosotros:</h3>
                 <p>
-                    Nosotros somos una plataforma la cual provee a <br>las personas o familias de alimentos que <br>los mantengan con buena salud y un excelente estilo de alimentación.
+                    Somos una empresa la cual provee a <br>las personas o familias de alimentos que <br>los mantengan con buena salud y un excelente estilo de alimentación.
                 </p>
                 <img src="images/megan-thomas-xMh_ww8HN_Q-unsplash.jpg" alt="">
             </div>
@@ -99,13 +112,9 @@
         <p style="text-align: center; color: #181818; background-color: #8dc84b;"><em>Derechos Reservados Brian Rodriguez© 2024</em></p>
     </footer>
 
-    <script src="js/checkout.js"></script>
     <script src="js/gotop.js"></script>
+    <script src="js/index.js"></script>
 
-    <script>
-        window.addEventListener('load', function() {
-            document.getElementById('loading').style.display = 'none';
-        });
-    </script>
+    
 </body>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <style>
+        body {
+            background-image: url(images/nuevo-mercadona-en-fraga.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+    <title>Formulario de Reseñas</title>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="menu container">
+            <a href="index.html" class="logo">Mercadona</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h2 class="titulo-uno">Formulario de Reseñas</h2>
+        <form action="#" id="formResena" onsubmit="return validarFormulario()">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required title="Ingrese un email válido" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="resena">Reseña:</label>
+                <textarea id="resena" name="resena" required placeholder="Escribe tu reseña aquí"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar Reseña" class="btn-submit">
+            </div>
+        </form>
+    </div>
+
+    
+
+    <script src="js/formulario.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

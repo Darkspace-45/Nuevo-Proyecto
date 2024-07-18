@@ -1,0 +1,39 @@
+{
+  "productos": [
+    {
+      "id": "3",
+      "producto": "Arandanos",
+      "precio": 1.1,
+      "cantidad": 1,
+      "total": 1.1
+    },
+    {
+      "id": "6",
+      "producto": "Plátano",
+      "precio": 1,
+      "cantidad": 2,
+      "total": 2
+    },
+    {
+      "id": "8",
+      "producto": "Espinaca",
+      "precio": 0.9,
+      "cantidad": 1,
+      "total": 0.9
+    },
+    {
+      "id": "7",
+      "producto": "Frituras de Pescado congeladas",
+      "precio": 3.6,
+      "cantidad": 1,
+      "total": 3.6
+    },
+    {
+      "id": "5",
+      "producto": "Pollo Entero",
+      "precio": 4.8,
+      "cantidad": 1,
+      "total": 4.8
+    }
+  ]
+}
